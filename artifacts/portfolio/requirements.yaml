@@ -1,0 +1,13 @@
+packages:
+  "framer-motion": "For smooth scroll animations and premium visual micro-interactions"
+  "lucide-react": "For beautiful vector icons across services and features"
+
+images:
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Dark, abstract cybersecurity and programming theme. Deep black background with subtle glowing violet and purple neon grid lines, digital particles, and soft light leaks. Very clean, minimal, suitable for a dark-mode website hero background."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a fully frontend portfolio website in Arabic.
+  - It uses RTL (right-to-left) layout natively via HTML attributes.
+  - No backend is required; forms are simulated with success toasts.
