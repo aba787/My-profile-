@@ -5,21 +5,18 @@ const projects = [
   {
     title: "منصة شركة رابط مندوبين بالباعيين",
     link: "https://aba787.github.io/HSHS/",
-    /* e-commerce/delivery abstract representation */
-    image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=800&q=80"
+    image: "https://i.ibb.co/wFzR1XNX/White-and-Light-Blue-Minimalist-Simple-Literature-Project-Presentation-2.png",
   },
   {
     title: "موقع ملعمة لغات",
     link: "https://aba787.github.io/Sanoora/",
-    /* education/language abstract representation */
-    image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80"
+    image: "https://i.ibb.co/ZzQ60zn4/White-and-Light-Blue-Minimalist-Simple-Literature-Project-Presentation.png",
   },
   {
     title: "وريث موقع",
     link: "https://aba787.github.io/WAREETH/",
-    /* legal/documents abstract representation */
-    image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800&q=80"
-  }
+    image: "https://i.ibb.co/6V40J86/White-and-Light-Blue-Minimalist-Simple-Literature-Project-Presentation-1.png",
+  },
 ];
 
 export function Projects() {
