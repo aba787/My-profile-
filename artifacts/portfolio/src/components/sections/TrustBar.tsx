@@ -7,7 +7,7 @@ export function TrustBar() {
   return (
     <section className="py-16 overflow-hidden relative border-b border-white/5">
       <div className="container mx-auto px-4 mb-8 text-center">
-        <h3 className="text-xl font-semibold text-muted-foreground">تقنيات ومنصات أعمل عليها</h3>
+        <h3 className="text-xl font-semibold text-muted-foreground">منصات طورت لها حلول أو اكتشفت فيها ثغرات</h3>
       </div>
       
       <div className="relative w-full flex overflow-hidden">
@@ -32,7 +32,7 @@ export function TrustBar() {
 
       <div className="container mx-auto px-4 mt-8 text-center">
         <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-          تم العمل باستخدام هذه المنصات في تطوير حلول، بناء أنظمة، أو تحسين الأداء لمشاريع مختلفة.
+          قدمت خدمات تقنية، حلول برمجية، وتحليل أمني لهذه المنصات أو لمشاريع مبنية عليها.
         </p>
       </div>
     </section>

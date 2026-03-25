@@ -3,9 +3,9 @@ import { Award, Code2, GraduationCap, FolderKanban } from "lucide-react";
 
 const stats = [
   { icon: Award, label: "أكثر من 20", title: "شهادة تقنية" },
-  { icon: Code2, label: "+3 سنوات", title: "خبرة عملية" },
-  { icon: GraduationCap, label: "+30 طالب", title: "تم مساعدتهم" },
-  { icon: FolderKanban, label: "+10 مشاريع", title: "حقيقية منجزة" },
+  { icon: Code2, label: "+5 سنوات", title: "خبرة عملية" },
+  { icon: GraduationCap, label: "+50 طالب", title: "تم مساعدتهم" },
+  { icon: FolderKanban, label: "+37 مشروع", title: "تم تنفيذه" },
 ];
 
 export function About() {
