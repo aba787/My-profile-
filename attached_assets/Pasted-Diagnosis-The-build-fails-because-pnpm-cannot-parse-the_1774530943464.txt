@@ -1,0 +1,43 @@
+Diagnosis
+
+The build fails because pnpm cannot parse the repository package.json. See the error messages: line 19, line 22, line 24. pnpm reports "Invalid package.json", then aborts install (line 25) and the build fails (line 26).
+pnpm also detected workspaces (line 21), so a broken/invalid root package.json will break workspace resolution and installation.
+Before changing build settings, verify the file exists in the repo:
+
+Check the repository package.json in your repo: https://github.com/aba787/My-profile-/blob/main/package.json
+Solution
+
+Verify package.json is present and can be parsed
+On your machine (in the repository root) run one of:
+node:
+node -e "JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('package.json OK')"
+jq (if installed):
+jq . package.json >/dev/null && echo "package.json OK"
+If these commands error, package.json is malformed or missing. Fix it before pushing.
+Fix common package.json problems
+Ensure package.json is valid JSON (double quotes for keys/strings, no trailing commas, no comments). Example minimal valid package.json you can adapt:
+{
+  "name": "my-profile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "your-build-command"
+  },
+  "dependencies": {}
+}
+If you use workspaces, ensure the root package.json includes a correct workspaces field and that each workspace folder has its own valid package.json:
+{
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": { "build": "..." }
+}
+Reproduce and verify locally
+Run:
+pnpm install
+pnpm run build
+Fix any local errors until pnpm install succeeds.
+Commit and push
+Commit the corrected package.json (and any other fixed workspace package.json files) and push to GitHub. Netlify will then be able to install dependencies and continue the build.
+If you still see errors after fixing package.json, paste the root package.json content (or the error from the local JSON parse command) and I’ll point out the exact syntax issue.
+
+
